@@ -1,4 +1,4 @@
-// Mock data for ATSC Operations Command Center.
+// Mock data for the E2E Command Center.
 // Two therapies (T1 commercial, T2 clinical), three modalities, seven personas,
 // realistic KPIs, orders, milestones, playbooks, exceptions, and agent action policy.
 

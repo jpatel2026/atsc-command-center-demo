@@ -5,7 +5,7 @@ export default function Header({ persona, setPersona, screen, setScreen, agentOp
   const screens = [
     { id: "S1", label: "Mission Control", subtitle: "One operating picture across the network" },
     { id: "S2", label: "Cockpit", subtitle: "My accountable KPIs" },
-    { id: "S3", label: "Vein-to-Vein", subtitle: "Order, milestone, and batch execution" },
+    { id: "S3", label: "E2E Visibility", subtitle: "Persona-aware execution detail — orders, batches, lots, shipments, cases" },
     { id: "AUD", label: "Audit", subtitle: "Compliance & access" },
     { id: "BACKEND", label: "Backend", subtitle: "Autonomy policy · playbooks · control plane" },
   ];
@@ -17,8 +17,8 @@ export default function Header({ persona, setPersona, screen, setScreen, agentOp
             <Activity size={18} className="text-white" />
           </div>
           <div className="leading-tight">
-            <div className="text-[15px] font-semibold text-white tracking-tight">ATSC Operations Command Center</div>
-            <div className="text-[10.5px] text-ink-400 font-medium tracking-wide uppercase">v2.0 — Agentic execution edition</div>
+            <div className="text-[15px] font-semibold text-white tracking-tight">E2E Command Center</div>
+            <div className="text-[10.5px] text-ink-400 font-medium tracking-wide uppercase">Cross-functional control tower · agentic execution</div>
           </div>
         </div>
 

@@ -50,7 +50,7 @@ function SCOOrderFlow({ persona, selectedMilestone, setSelectedMilestone, setOpe
         <div className="flex items-center justify-between flex-wrap gap-3">
           <div>
             <div className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: persona.color }}>
-              Vein-to-Vein · Aggregate order view · {persona.name}
+              E2E Visibility · {persona.name} · aggregate view
             </div>
             <div className="text-white text-[16px] font-medium leading-tight mt-0.5">{orders.length} active orders across both therapies</div>
           </div>
@@ -84,7 +84,7 @@ function SCOOrderFlow({ persona, selectedMilestone, setSelectedMilestone, setOpe
 
       {/* Tier 2 — Milestone strip */}
       <div className="rounded-lg border border-ink-700/70 bg-ink-900/40 p-4">
-        <div className="text-[11px] font-semibold uppercase tracking-wider text-ink-400 mb-3">Vein-to-Vein · milestone strip · 14-step patient journey</div>
+        <div className="text-[11px] font-semibold uppercase tracking-wider text-ink-400 mb-3">Milestone strip · 14-step patient journey</div>
         <div className="grid grid-cols-7 lg:grid-cols-14 gap-1">
           {milestones.map((m) => {
             const at = ordersAtMilestone(m.id);
@@ -306,7 +306,7 @@ function OrderGantt({ order, onBack, runPlaybook }) {
 
       <div className="rounded-lg border border-ink-700/70 bg-gradient-to-br from-ink-900 via-ink-900 to-ink-900/40 p-4 flex items-start gap-4 flex-wrap">
         <div className="min-w-0 flex-1">
-          <div className="text-[11px] font-semibold uppercase tracking-wider text-accent-300">Order Gantt · vein-to-vein detail</div>
+          <div className="text-[11px] font-semibold uppercase tracking-wider text-accent-300">Order Gantt · E2E execution detail</div>
           <div className="flex items-baseline gap-2 mt-0.5">
             <div className="text-white text-[18px] font-semibold tracking-tight font-mono">{order.id}</div>
             <div className="text-[12px] text-ink-300">· Patient {order.patient}</div>

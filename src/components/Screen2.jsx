@@ -21,7 +21,7 @@ export default function Screen2({ persona, onOpenKpi, setScreen }) {
           onClick={() => setScreen("S3")}
           className="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-md text-[12px] font-medium bg-accent-600/15 text-accent-200 ring-1 ring-accent-500/30 hover:bg-accent-600/25"
         >
-          Go to Vein-to-Vein for {p.short} <ChevronRight size={14} />
+          Go to E2E Visibility for {p.short} <ChevronRight size={14} />
         </button>
       </div>
 

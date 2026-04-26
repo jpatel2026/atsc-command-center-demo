@@ -93,7 +93,7 @@ function screenLabel(s) {
   return ({
     S1: "Mission Control",
     S2: "Cockpit",
-    S3: "Vein-to-Vein",
+    S3: "E2E Visibility",
     AUD: "Audit",
     BACKEND: "Backend",
   })[s] || s;
@@ -102,7 +102,7 @@ function screenLabel(s) {
 function Footer() {
   return (
     <footer className="px-5 py-3 border-t border-ink-700/70 text-[10.5px] text-ink-500 flex items-center gap-3 flex-wrap">
-      <span>ATSC Operations Command Center · v2.0 (agentic execution)</span>
+      <span>E2E Command Center · cross-functional, persona-driven, agentic</span>
       <span>·</span>
       <span>Common data model · OrderID · Patient (de-identified) · Lot/Batch · Slot · Milestone · Deviation · Exception · Action · Playbook · Approval</span>
       <span className="ml-auto">GxP-aware · GAMP 5 risk-based validation</span>
