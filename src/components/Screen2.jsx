@@ -13,7 +13,7 @@ export default function Screen2({ persona, onOpenKpi, setScreen }) {
           {p.short.slice(0, 2).toUpperCase()}
         </div>
         <div className="flex-1 min-w-0">
-          <div className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: p.color }}>Persona view — {p.short}</div>
+          <div className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: p.color }}>Cockpit — {p.short}</div>
           <div className="text-white text-[16px] font-medium leading-tight mt-0.5">{p.name} — {p.domain}</div>
           <div className="text-[12px] text-ink-400 mt-1 max-w-3xl">{p.description}</div>
         </div>
@@ -21,7 +21,7 @@ export default function Screen2({ persona, onOpenKpi, setScreen }) {
           onClick={() => setScreen("S3")}
           className="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-md text-[12px] font-medium bg-accent-600/15 text-accent-200 ring-1 ring-accent-500/30 hover:bg-accent-600/25"
         >
-          Go to {p.short} execution view <ChevronRight size={14} />
+          Go to Vein-to-Vein for {p.short} <ChevronRight size={14} />
         </button>
       </div>
 

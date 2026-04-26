@@ -54,7 +54,7 @@ function Banner({ filters }) {
         <Boxes size={18} />
       </div>
       <div className="flex-1 min-w-0">
-        <div className="text-[11px] font-semibold uppercase tracking-wider text-accent-300">Cross-functional dashboard</div>
+        <div className="text-[11px] font-semibold uppercase tracking-wider text-accent-300">Mission Control · cross-functional dashboard</div>
         <div className="text-white text-[15px] font-medium leading-tight mt-0.5">
           One operating picture across both therapies and {filters.region === "All" ? "all regions" : `${filters.region}`} — same starting view for every persona.
         </div>

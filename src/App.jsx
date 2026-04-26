@@ -6,9 +6,7 @@ import Screen2 from "./components/Screen2.jsx";
 import Screen3 from "./components/Screen3.jsx";
 import AgentDock from "./components/AgentDock.jsx";
 import KPIDrillDown from "./components/KPIDrillDown.jsx";
-import AutonomyPolicy from "./components/AutonomyPolicy.jsx";
-import PlaybookLibrary from "./components/PlaybookLibrary.jsx";
-import ControlPlane from "./components/ControlPlane.jsx";
+import BackendPanel from "./components/BackendPanel.jsx";
 import AuditLog from "./components/AuditLog.jsx";
 import PlaybookRunner from "./components/PlaybookRunner.jsx";
 import { personas, approvals } from "./data/seed.js";
@@ -61,9 +59,7 @@ export default function App() {
             runPlaybook={runPlaybook}
           />
         )}
-        {screen === "POL" && <AutonomyPolicy />}
-        {screen === "PB" && <PlaybookLibrary runPlaybook={runPlaybook} />}
-        {screen === "OBS" && <ControlPlane />}
+        {screen === "BACKEND" && <BackendPanel runPlaybook={runPlaybook} />}
         {screen === "AUD" && <AuditLog />}
       </main>
 
@@ -95,13 +91,11 @@ export default function App() {
 
 function screenLabel(s) {
   return ({
-    S1: "Cross-functional",
-    S2: "Persona view",
-    S3: "Order / Batch",
-    POL: "Autonomy & Policy",
-    PB: "Playbooks",
-    OBS: "Control Plane",
+    S1: "Mission Control",
+    S2: "Cockpit",
+    S3: "Vein-to-Vein",
     AUD: "Audit",
+    BACKEND: "Backend",
   })[s] || s;
 }
 

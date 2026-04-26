@@ -3,13 +3,11 @@ import { personas } from "../data/seed.js";
 
 export default function Header({ persona, setPersona, screen, setScreen, agentOpen, setAgentOpen, pendingApprovals }) {
   const screens = [
-    { id: "S1", label: "Cross-functional", subtitle: "Network performance" },
-    { id: "S2", label: "Persona", subtitle: "My accountable KPIs" },
-    { id: "S3", label: "Order / Batch", subtitle: "Execution detail" },
-    { id: "POL", label: "Autonomy & Policy", subtitle: "Levels, blast radius, rollback" },
-    { id: "PB", label: "Playbooks", subtitle: "Versioned action sequences" },
-    { id: "OBS", label: "Control Plane", subtitle: "Agent observability" },
+    { id: "S1", label: "Mission Control", subtitle: "One operating picture across the network" },
+    { id: "S2", label: "Cockpit", subtitle: "My accountable KPIs" },
+    { id: "S3", label: "Vein-to-Vein", subtitle: "Order, milestone, and batch execution" },
     { id: "AUD", label: "Audit", subtitle: "Compliance & access" },
+    { id: "BACKEND", label: "Backend", subtitle: "Autonomy policy · playbooks · control plane" },
   ];
   return (
     <header className="sticky top-0 z-40 border-b border-ink-700/70 glass">
@@ -61,7 +59,7 @@ export default function Header({ persona, setPersona, screen, setScreen, agentOp
             <span className="absolute inline-flex h-full w-full rounded-full bg-ok-500 opacity-75 animate-ping"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-ok-500"></span>
           </span>
-          AI Agent
+          Co-Pilot
           {pendingApprovals > 0 && (
             <span className="ml-1 text-[10px] font-semibold rounded-full bg-warn-500/20 text-warn-500 px-1.5 py-0.5">
               {pendingApprovals} pending

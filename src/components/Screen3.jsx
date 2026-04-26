@@ -50,7 +50,7 @@ function SCOOrderFlow({ persona, selectedMilestone, setSelectedMilestone, setOpe
         <div className="flex items-center justify-between flex-wrap gap-3">
           <div>
             <div className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: persona.color }}>
-              Tier 1 — Aggregate order view · {persona.name}
+              Vein-to-Vein · Aggregate order view · {persona.name}
             </div>
             <div className="text-white text-[16px] font-medium leading-tight mt-0.5">{orders.length} active orders across both therapies</div>
           </div>
@@ -84,7 +84,7 @@ function SCOOrderFlow({ persona, selectedMilestone, setSelectedMilestone, setOpe
 
       {/* Tier 2 — Milestone strip */}
       <div className="rounded-lg border border-ink-700/70 bg-ink-900/40 p-4">
-        <div className="text-[11px] font-semibold uppercase tracking-wider text-ink-400 mb-3">Tier 2 — Milestone view (horizontal patient journey)</div>
+        <div className="text-[11px] font-semibold uppercase tracking-wider text-ink-400 mb-3">Vein-to-Vein · milestone strip · 14-step patient journey</div>
         <div className="grid grid-cols-7 lg:grid-cols-14 gap-1">
           {milestones.map((m) => {
             const at = ordersAtMilestone(m.id);
@@ -163,7 +163,7 @@ function MilestoneDrill({ milestoneId, onSelectOrder, runPlaybook, onClose }) {
     <div className="rounded-lg border border-accent-500/30 bg-accent-900/5 p-4">
       <div className="flex items-center gap-3 flex-wrap">
         <div>
-          <div className="text-[11px] font-semibold uppercase tracking-wider text-accent-300">Tier 2.5 — milestone double-click</div>
+          <div className="text-[11px] font-semibold uppercase tracking-wider text-accent-300">Milestone double-click · orders at this step</div>
           <div className="text-white text-[15px] font-medium leading-tight">M{ms.n}: {ms.name} · {list.length} orders</div>
         </div>
         <div className="flex items-center gap-1">
@@ -306,7 +306,7 @@ function OrderGantt({ order, onBack, runPlaybook }) {
 
       <div className="rounded-lg border border-ink-700/70 bg-gradient-to-br from-ink-900 via-ink-900 to-ink-900/40 p-4 flex items-start gap-4 flex-wrap">
         <div className="min-w-0 flex-1">
-          <div className="text-[11px] font-semibold uppercase tracking-wider text-accent-300">Tier 3 — Order Gantt detail</div>
+          <div className="text-[11px] font-semibold uppercase tracking-wider text-accent-300">Order Gantt · vein-to-vein detail</div>
           <div className="flex items-baseline gap-2 mt-0.5">
             <div className="text-white text-[18px] font-semibold tracking-tight font-mono">{order.id}</div>
             <div className="text-[12px] text-ink-300">· Patient {order.patient}</div>
@@ -341,7 +341,7 @@ function OrderGantt({ order, onBack, runPlaybook }) {
       <div className="rounded-lg border border-ink-700/70 bg-ink-900/40 p-4">
         <div className="flex items-center gap-2 mb-3">
           <Bot size={14} className="text-accent-300" />
-          <div className="text-[11px] font-semibold uppercase tracking-wider text-accent-300">AI Agent — ranked next-best actions</div>
+          <div className="text-[11px] font-semibold uppercase tracking-wider text-accent-300">Co-Pilot · ranked next-best actions</div>
         </div>
         <div className="space-y-2">
           {recs.map((r, i) => <RecCard key={i} rec={r} runPlaybook={runPlaybook} order={order} />)}

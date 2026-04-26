@@ -21,7 +21,7 @@ export default function AgentDock({ open, setOpen, screen, persona, runPlaybook,
           <Bot size={13} />
         </div>
         <div className="leading-tight flex-1 min-w-0">
-          <div className="text-[12.5px] font-semibold text-white">AI Agent</div>
+          <div className="text-[12.5px] font-semibold text-white">Co-Pilot</div>
           <div className="text-[10px] text-ink-400 truncate">{agentScope}</div>
         </div>
         <button onClick={() => setOpen(false)} className="h-6 w-6 grid place-items-center rounded text-ink-300 hover:text-white hover:bg-ink-800">
